@@ -27,6 +27,7 @@ public class AdsPlay : MonoBehaviour, IUnityAdsListener
 
         // Initialize the Ads listener and service:
         Advertisement.AddListener(this);
+        
         Advertisement.Initialize(gameId, true);
     }
 

@@ -9,7 +9,7 @@ public class On_OffSound : MonoBehaviour
 
     private void Awake()
     {
-       soundManager= GameObject.Find("GameObject").transform.GetChild(0).gameObject;
+       soundManager= GameObject.Find("Sound").transform.GetChild(0).gameObject;
     }
 
     private void Start()
