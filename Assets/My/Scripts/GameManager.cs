@@ -69,11 +69,12 @@ public class GameManager : MonoBehaviour
         if (player != null)//最后结束那关卡没有主角脚本
             if (!player.isDead)
             {
-                //写进当前的玩家血量
-                PlayerPrefs.SetFloat("PlayerHealth", player.health);
+             
+                 //写进当前的玩家血量
+                 PlayerPrefs.SetFloat("PlayerHealth", player.health);
                 PlayerPrefs.SetInt("sceneIndex", SceneManager.GetActiveScene().buildIndex);
             }
-
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
 
     }
